@@ -58,3 +58,7 @@ async def update_task(task_id: int, task: Task):
 async def delete_item(task_id: int):
     logger.info(f'Отработал DELETE запрос (удалил задачу с id = {task_id}).')
     return {'DELETE_task_id': task_id}
+
+# протестировал все конечные точки используя документацию: http://127.0.0.1:8000/docs
+# для запуска приложения ввести команду из этой директории исполняемого файла, командой: uvicorn main:app --reload
+# (main название файла app название переменной FastAPI)
